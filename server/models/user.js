@@ -22,7 +22,14 @@ var userSchema = mongoose.Schema({
         minlength: 6
     },
     tokens: [{
-
+        access: {
+        type: String,
+        required: true
+        },
+        token: {
+        type: String,
+        required: true
+        }
     }]
 });
 
